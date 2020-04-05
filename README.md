@@ -1,7 +1,7 @@
 # ExerciciosApiFlask
 
 # series_app 
--Uma API para registro de informações sobre séries, com os dados:  Titulo da série, Gênero, Total de temporadas, Média no IMDB e Se está ativa.  A API registra novas séries e exibi todas as séries registradas.
+- Uma API para registro de informações sobre séries, com os dados:  Titulo da série, Gênero, Total de temporadas, Média no IMDB e Se está ativa.  A API registra novas séries e exibi todas as séries registradas.
  
 # jogadores_app
 - Uma API Restful para registrar informações sobre um jogador de E-sports profissional com os dados:Nome do Jogador,Nickname,Nome do time, Role (posição) na qual joga, Total de abatimentos, Total de assistências, Total de mortes, Total de partidas jogadas e Total de vitórias. A API calcula automaticamente:
