@@ -8,3 +8,6 @@
 Proporção de KDA: Total de Assistências e Abatimentos dividido pelo total de morte (K+A/D). Caso o total de mortes seja 0, não dividir.
 Porcentagem de vitórias: Total de vitórias dividido pelo total de partidas jogadas multiplicado por 100.
 Estes dados devem ser salvos automaticamente pela API e devem ser retornados via JSON.
+
+# IntegracaoFlask_Android
+- Projeto  que mostra a integração das apis Get, Post, Delete e Put do Flask em um aplicativo Android.
