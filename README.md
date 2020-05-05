@@ -11,3 +11,7 @@ Estes dados devem ser salvos automaticamente pela API e devem ser retornados via
 
 # IntegracaoFlask_Android
 - Projeto  que mostra a integração das apis Get, Post, Delete e Put do Flask em um aplicativo Android.
+
+# FirebaseAutenticacao
+- Projeto  que mostra a integração dos serviços de autenticação de email e senha do Firebase em um aplicativo Android.
+
