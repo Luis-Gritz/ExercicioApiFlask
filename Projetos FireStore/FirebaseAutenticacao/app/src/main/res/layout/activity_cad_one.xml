@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CadOneActivity">
+
+    <EditText
+        android:id="@+id/editTitulo"
+        android:textSize="20sp"
+        android:hint="Digite o titulo da tarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Prioridade:"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_alta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alta" />
+        <RadioButton android:id="@+id/radio_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média" />
+        <RadioButton android:id="@+id/radio_baixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baixa" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Categoria:"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_trabalhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trabalhar" />
+        <RadioButton android:id="@+id/radio_jogar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogar" />
+        <RadioButton android:id="@+id/radio_dormir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dormir" />
+    </RadioGroup>
+    <Button
+        android:onClick="salvarNoFirebase1"
+        android:text="Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
