@@ -130,11 +130,9 @@ public class ConsultasActivity extends AppCompatActivity {
 
     public void carregardadospeloSalarioAndFilhos(View view) {
         double salario = Double.parseDouble(editSalario2.getText().toString());
-        int filhos = Integer.parseInt(editFilhos.getText().toString());
 
         CollectionReference pessoas = db.collection("exemplo");
-        Query query = pessoas.whereGreaterThan("salario", salario)
-                .whereGreaterThan("qtde_filhos", filhos);
+        Query query = pessoas.whereGreaterThan("salario", salario);
         query.get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -149,7 +147,11 @@ public class ConsultasActivity extends AppCompatActivity {
                             }
                             resultado = "";
                             for (Pessoa p: listPessoas){
-                                resultado += p.toString() + "\n";
+                                int filhos = Integer.parseInt(editFilhos.getText().toString());
+                                if(p.qtde_filhos > filhos){
+                                    resultado += p.toString() + "\n";
+                                }
+
                             }
 
                             textResultado.setText(resultado);
